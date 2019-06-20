@@ -6,46 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Type and speck</title>
+    <title>Speech</title>
 </head>
 
 <body>
-    <main>
+<div>
+    <form id="my-form">
         <div>
-            <div class="header">
-                <h1>TYPE TO Speak</h1>
-            </div>
-            <div class="container">
-                <form>
-                    <div class="form-group">
-                        <input type="text" name="" id="text-input" placeholder="type anythng...">
-                    </div>
-                    <div>
-                        <label for="rate">Rate</label>
-                        <input type="range" id="rate" min="0.5" max="1.0" step="0.1">
-                    </div>
-                    <div>
-                        <div>
-                            <label for="pitch">pitch</label>
-                            <input type="range" id="pitch" min="0." max="2.0" step="0.1">
-                        </div>
-                        <div>
-                            <select id="voice-select">
-                                <option>type to Speak</option>
-                                <option>type to Speak</option>
-                                <option>type to Speak</option>
-                                <option>type to Speak</option>
-                                <option>type to Speak</option>
-                                <option>type to Speak</option>
-                            </select>
-                        </div>
-                        <button>Speak it</button>
-                    </div>
-
-                </form>
-            </div>
+            <label for="isbn">Title</label>
+            <input type="text" id="isbn">
         </div>
-    </main>
+        <div>
+            <label for="isbn">message</label>
+            <input type="text" id="isbn">
+        </div>
+        <div>
+            <label for="isbn">author</label>
+            <input type="text" id="isbn">
+        </div>
+        <input type="submit" value="add resipe">
+    </form>
+    <table>
+        <thead>
+            <th>resipe</th>
+            <th>message</th>
+            <th>aurthor</th>
+        </thead>
+        <tbody id="book-list"></tbody>
+    </table>
+</div>
     <script src="main.js"></script>
 </body>
 
