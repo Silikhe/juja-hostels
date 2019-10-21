@@ -17,24 +17,25 @@ export class TodoService {
 
    todosLimits = '?_limit=10'
 
-//   constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) { }
 
-//   getTodos():Observable<Todo[]>{
-//    return this.http.get<Todo[]>(`${this.todosUrl}${this.todosLimits}`);
-//   }
+  getTodos():Observable<Todo[]>{
+   return this.http.get<Todo[]>(`${this.todosUrl}${this.todosLimits}`);
+  }
 
-//   deleteTodo(todo:Todo):Observable<Todo>{
-//     const url = `${this.todosUrl}/${todo.id}`
-//     return this.http.delete<Todo>(url)
-//   }
+  deleteTodo(todo:Todo):Observable<Todo>{
+    const url = `${this.todosUrl}/${todo.id}`
+    return this.http.delete<Todo>(url)
+  }
 
-//   toggleCompleted(todo: Todo):Observable<any>{
-//     const url = `${this.todosUrl}/${todo.id}`
-//     return this.http.put(url, todo);
-//   }
+  addTodo(todo:Todo):Observable<Todo>{
+    return this.http.post<Todo>(this.todosUrl, todo);
+  }
+
+  toggleCompleted(todo: Todo):Observable<any>{
+    const url = `${this.todosUrl}/${todo.id}`
+    return this.http.put(url, todo);
+  }
 
 
-//   addTodo(todo:Todo):Observable<Todo>{
-//     return this.http.post<Todo>(this.todosUrl, todo)
-//   }
-// }
+}
