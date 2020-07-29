@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+}
+
+
+
+/*navigatin bar */
+header{
+    background:#E5EBF0;
+    min-height: 30px;
+    padding: 10px;
+    color: black;
+    border-bottom:#ffffff 2px solid;
+    box-shadow: 1px 13px 21px -6px rgba(0,0,0,0.1);
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+header ul{
+    float: right;
+    margin-left: 60em;
+
+}
+
+header li{
+    display: inline;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+header a{
+
+    text-decoration: none;
+    color: gray;
+}
+
+header .logo{
+    padding: 0;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+header span{
+    color: grey;
+}
+nav{
+    float: right;
+    margin-right: 100px;
+}
+
+.container{
+    margin: 0 30px;
+}
+
+
+.content{
+    background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    text-align: center;
+    color: rgb(131, 20, 88);
+    line-height: 50px;
+}
+
+
+
+.welcome{
+  /* contens/p/h1 */
+    font-weight: 400;
+    font-size: 30px;
+    padding:20px 5em;
+}
+
+/* inputs */
+.inputs{
+    background: #8E8E8E;
+    padding: 20px;
+    display: flex;
+}
+
+
+.inputs input{
+    background: none;
+    border: #E5EAF0 2px solid;
+    border-radius: 5px;
+    width: 25em;
+    height: 20px;
+    padding: 5px;
+    outline: none;
+    margin-left: 30em;
+}
+
+.inputs button{
+    background: #E5EAF0;
+    border: #ffffff 2px solid;
+    border-radius: 5px;
+    width: 10em;
+    height: 30px;
+    /* padding: 5px; */
+     outline: none;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+i{
+    font-size: 2em;
+    opacity: 0.9;
+    margin: 10px;
+}
+
+/* more section */
+.more{
+    min-height: 200px;
+    background: #E5EAF0;
+    display: flex;
+}
+
+
+.info{
+    width: 100%;
+    margin: 3px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+footer{
+    background: black;
+    opacity: 0.8;
+    color: #ffffff;
+    text-align: center;
+    min-height: 4em;
+}

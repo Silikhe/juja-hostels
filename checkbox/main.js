@@ -1,33 +1,12 @@
-
-let checks = document.querySelectorAll(".check");
-
-const btn = document.getElementById("return");
-
-btn.addEventListener("click", function(){
-    for(let i = 0;  i<checks.length; i++){
+const subject = (a,b,c,d,e) => {
+    return a+b+c+d+e;
+};
 
 
-        let h1 = document.getElementById("chekers");
-        // checks[i].style.backgroundColor = colors[i];
-        if(checks[i].checked === true){
+subject(5,6,6,4,9);
 
-            if(checks[0].checked === true){
-                h1.innerHTML = "edited"
-            }
-            if(checks[1].checked === true){
-                h1.innerHTML = "update"
-            }
-            if(checks[2].checked === true){
-                h1.innerHTML = "create"
 
-            }
-            if(checks[3].checked === true){
-                h1.innerHTML = "delete"
-
-            }
-
-        }
-    }
-});
-
+const percentage = () => {
+    console.log(subject.a/subject*100);
+};
 

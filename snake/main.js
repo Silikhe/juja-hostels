@@ -1,0 +1,1 @@
+let COL =26,ROWS = 26

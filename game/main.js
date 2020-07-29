@@ -62,3 +62,24 @@ input.addEventListener("change", function(){
     p.textContent = input.value;
     winningScore = Number(input.value)
 });
+
+
+let count = document.getElementById("count");
+
+let counter = 0;
+
+function setup(){
+
+    count.textContent = counter;
+
+
+    function timeIt(){
+        counter++;
+        count.textContent = counter;
+    }
+
+    setInterval(timeIt, 10);
+
+}
+
+console.log(setup())    ;

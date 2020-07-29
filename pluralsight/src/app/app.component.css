@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:black;
+    font: outline;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+
+.items{
+    display: inline-block;
+    list-style: none;
+    font-size: 18px;
+}
+
+.logo{
+    color: red;
+    font-size: 100;
+}
+
+ul li{
+    list-style: none;
+    text-transform: capitalize;
+    display: inline;
+    margin: 10px;
+}
