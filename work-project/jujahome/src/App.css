@@ -97,6 +97,10 @@ h6 {
   background: var(--offWhite);
   z-index: 1;
 }
+
+.nav-logo{
+  width: :100%;
+}
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -112,8 +116,8 @@ h6 {
   color: var(--primaryColor);
 }
 .nav-links {
-  height: 0;
-  overflow: hidden;
+  /* height: 0;
+  overflow: hidden; */
   transition: var(--mainTransition);
   list-style-type: none;
 }
