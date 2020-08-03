@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function Burner({}) {
+export default function Burner({ children, title, subtitle }) {
     return (
-        <div>
-
+        <div className="burner">
+            <h1>{title}</h1>
+            <div></div>
+            <p>{subtitle}</p>
+            {children}
         </div>
     )
 }
