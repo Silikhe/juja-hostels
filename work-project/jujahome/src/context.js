@@ -7,9 +7,9 @@ const RoomContext = React.createContext();
     state={}
     render() {
         return (
-            <RoomContext.Provider value="halloh" >
+            <RoomContext.Provider value={"halloh"} >
                 {this.props.children}
-            </RoomContext.Provider>;
+            </RoomContext.Provider>
         )
     }
 }
