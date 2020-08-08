@@ -9,7 +9,14 @@ export default class SingleRoom extends Component {
     render() {
         return (
             <div>
-
+                <div>
+                <div className="banner">
+            <h1>{title}</h1>
+            <div></div>
+            <p>{subtitle}</p>
+            {children}
+        </div>
+                </div>
             </div>
         )
     }
