@@ -6,17 +6,15 @@ import  Burner from '../components/Burner'
 import {RoomContext} from '../context'
 
 export default class SingleRoom extends Component {
+    constructor(props){
+        super(props)
+      console.log(this.props)
+    }
+    componentDidMount(){}
     render() {
         return (
             <div>
-                <div>
-                <div className="banner">
-            <h1>{title}</h1>
-            <div></div>
-            <p>{subtitle}</p>
-            {children}
-        </div>
-                </div>
+            Hello
             </div>
         )
     }
