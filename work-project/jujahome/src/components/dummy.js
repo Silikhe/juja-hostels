@@ -1,4 +1,4 @@
-cg from '../images/room-1.jpeg'
+
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import  Burner from '../components/Burner'
