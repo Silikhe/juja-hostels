@@ -2,17 +2,17 @@ import React, { Component } from 'react'
 import defaultBcg from '../images/room-1.jpeg'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
-import  Burner from '../components/Burner'
-import {RoomContext} from '../context'
+import Burner from '../components/Burner'
+import { RoomContext } from '../context'
 
 export default class SingleRoom extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
-    //   console.log(this.props)
-    this.state={
-        slug:this.props.match.param.slug,
-        defaultBcg
-     }
+        //   console.log(this.props)
+        this.state = {
+            slug: this.props.match.param.slug,
+            defaultBcg
+        }
     }
 
     static contextType = RoomContext
@@ -20,20 +20,32 @@ export default class SingleRoom extends Component {
 
     // componentDidMount(){}
     render() {
-        const {getRoom}  = this.context;
+        const { getRoom } = this.context;
         const room = getRoom(this.state.slug);
-        if(!room){
-            return  <div className="error">
-                <h1>No such room could be found...</h1>
-                <Link to ='/rooms' className='btn-primary'>
-                    Back to rooms
+        if (!room) {
+            return (
+                <div className="error">
+                    <h1>No such room could be found...</h1>
+                    <Link to='/rooms' className='btn-primary'>
+                        Back to rooms
                 </Link>
-            </div>
+                </div>);
         }
+        const { name,
+            description,
+            capacity,
+            size,
+            extras,
+            breakfast,
+            pets,
+            images
+        } = room
         return (
-            <div>
-            Hello
-            </div>
+            <Hero hero="roomsHero">
+                <Burner title={`${name} room`}>
+                    <Link to="/rooms" className="btn-primary">Back to rooms</Link>
+                </Burner>
+            </Hero>
         )
     }
 }
