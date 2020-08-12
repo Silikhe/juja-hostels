@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import Burner from '../components/Burner'
 import { RoomContext } from '../context'
+import StyledHero from '../components/StyledHero'
 
 export default class SingleRoom extends Component {
     constructor(props) {
         super(props)
         //   console.log(this.props)
         this.state = {
-            slug: this.props.match.param.slug,
+            slug: this.props.match.params.slug,
             defaultBcg
         }
     }
@@ -20,8 +21,9 @@ export default class SingleRoom extends Component {
 
     // componentDidMount(){}
     render() {
-        const { getRoom } = this.context;
-        const room = getRoom(this.state.slug);
+        const { getRooms } = this.context;
+        const room = getRooms(this.state.slug);
+        // console.log(room)
         if (!room) {
             return (
                 <div className="error">
@@ -41,11 +43,20 @@ export default class SingleRoom extends Component {
             images
         } = room
         return (
-            <Hero hero="roomsHero">
+            <>
+            <StyledHero img={images[0] || this.state.defaultBcg}>
                 <Burner title={`${name} room`}>
                     <Link to="/rooms" className="btn-primary">Back to rooms</Link>
                 </Burner>
-            </Hero>
+            </StyledHero>
+            <section className="single-room">
+                <div className="single-room-images">
+                    {images.map((image, index) => {
+                        return <img key={index} src={image} alt={name} />
+                    })}
+                </div>
+            </section>
+            </>
         )
     }
 }
