@@ -1,5 +1,5 @@
 import React from 'react'
-import useContext from 'react'
+import {useContext} from 'react'
 import { RoomContext } from '../context'
 import Title from './Title'
 
@@ -9,7 +9,7 @@ const getUnique = (items, value) => {
 
 export default function RoomFilter({rooms}) {
     const context = useContext(RoomContext);
-    const { hanleChannge,
+    const { handleChange,
         type,
         capacity,
         price,
@@ -23,7 +23,7 @@ export default function RoomFilter({rooms}) {
 
     let types = getUnique(rooms, 'type');
     types = ['all', ...types];
-    type = types.map((item, index) => {
+    types = types.map((item, index) => {
         return <option value={item} key={index}>{item}</option>
     })
     return (
@@ -34,9 +34,48 @@ export default function RoomFilter({rooms}) {
                     <label htmlFor="type">room type</label>
                     <select
                     name="type"
-                     id="type"value={type}
+                     id="type"
+                     value={type}
                      className="form-control"
-                     onChange={hanleChannge}
+                     onChange={handleChange}
+                     >{types}</select>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="capacity">guests</label>
+                    <select
+                    name="capacity"
+                     id="capacity"
+                     value={capacity}
+                     className="form-control"
+                     onChange={handleChange}
+                     >{types}</select>
+                </div>
+                <div className="form-group">
+                    <label htmlFor="capacity">guests</label>
+                    <select
+                    name="capacity"
+                     id="capacity"
+                     value={capacity}
+                     className="form-control"
+                     onChange={handleChange}
+                     >{types}</select>
+                </div><div className="form-group">
+                    <label htmlFor="capacity">guests</label>
+                    <select
+                    name="capacity"
+                     id="capacity"
+                     value={capacity}
+                     className="form-control"
+                     onChange={handleChange}
+                     >{types}</select>
+                </div><div className="form-group">
+                    <label htmlFor="capacity">guests</label>
+                    <select
+                    name="capacity"
+                     id="capacity"
+                     value={capacity}
+                     className="form-control"
+                     onChange={handleChange}
                      >{types}</select>
                 </div>
             </form>
