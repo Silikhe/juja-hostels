@@ -73,7 +73,7 @@ export default function RoomFilter({ rooms }) {
                 </div>
                 <div className="form-group">
                     <label htmlFor="size">room size</label>
-                    <div className="size-input">
+                    <div className="size-inputs">
                         <input
                         type="number"
                         name="minSize"
@@ -90,6 +90,11 @@ export default function RoomFilter({ rooms }) {
                         onChange={handleChange}
                         className="size-input"
                         />
+                    </div>
+                </div>
+                <div className="form-group">
+                    <div className="single-extra">
+                        <imput type="checkbox" name="breakfast" type="breakfast"
                     </div>
                 </div>
             </form>
