@@ -62,7 +62,7 @@ class RoomProvider extends Component {
 
     handleChange = event => {
         const target = event.target
-        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const value =   target.type === 'checkbox' ? target.checked : target.value;
         const name = event.target.name
 
         // console.log(`this is ${value}`)
