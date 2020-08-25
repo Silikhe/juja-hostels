@@ -1,4 +1,4 @@
-rfimport React, { Component } from 'react'
+import React, { Component } from 'react'
 import Logo from './Logo/Logo'
 import { FaAlignRight } from "react-icons/fa"
 import { Link } from 'react-router-dom'
