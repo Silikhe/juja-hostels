@@ -18,7 +18,7 @@ var style = {
 export default function Footer() {
     return (
             <div style={style}>
-                <p>
+                <p className="footer">
                     Created by
                     <a href="https://silsilas.github.io/portf/"> <i>Silikhe </i></a>
                      copyright &copy; 2020
