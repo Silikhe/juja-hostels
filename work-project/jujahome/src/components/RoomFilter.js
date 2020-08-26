@@ -17,7 +17,7 @@ export default function RoomFilter({ rooms }) {
         maxPrice,
         minSize,
         maxSize,
-        breakfast,
+        smoking,
         pets
     } = context;
 
@@ -47,7 +47,7 @@ export default function RoomFilter({ rooms }) {
                     >{types}</select>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="capacity">guests</label>
+                    <label htmlFor="capacity">Tenants</label>
                     <select
                         name="capacity"
                         id="capacity"
@@ -58,7 +58,7 @@ export default function RoomFilter({ rooms }) {
                 </div>
                 <div className="form-group">
                     <label htmlFor="price">
-                        Room Price ${price}
+                        Room Price Ksh.{price}
                     </label>
                     <input
                         type="range"
@@ -96,12 +96,12 @@ export default function RoomFilter({ rooms }) {
                     <div className="single-extra">
                         <input
                         type="checkbox"
-                            name="breakfast"
-                            id="breakfast"
-                            checked={breakfast}
+                            name="smoking"
+                            id="smoking"
+                            checked={smoking}
                             onChange={handleChange}
                         />
-                        <label htmlFor="breakfast">breakfast</label>
+                        <label htmlFor="smoking">smoking</label>
                     </div>
                     <div className="single-extra">
                         <input

@@ -12,5 +12,6 @@ export default function Error() {
                 </Link>
             </Burner>
         </Hero>
+
     )
 }

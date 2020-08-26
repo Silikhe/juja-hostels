@@ -4,7 +4,7 @@ import SingleRoom from './pages/SingleRoom';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import { Route, Switch } from 'react-router-dom';
-
+import Footer from './components/Footer'
 import './App.css';
 import Navbar from './components/Navbar';
 
@@ -18,6 +18,7 @@ function App() {
         <Route path="/rooms/:slug" exact component={SingleRoom} />
         <Route component={Error} />
       </Switch>
+      <Footer/>
     </>
   );
 }

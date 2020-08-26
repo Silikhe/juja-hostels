@@ -14,7 +14,7 @@ export default function Rooms() {
                 </Link>
             </Burner>
         </Hero>
-        <RoomsContainer/>   
+        <RoomsContainer/>
         </>
     )
 }

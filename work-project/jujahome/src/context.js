@@ -120,7 +120,7 @@ class RoomProvider extends Component {
             maxPrice,
             minSize,
             maxSize,
-            breakfast,
+            smoking,
             pets
         } = this.state;
 
@@ -147,8 +147,8 @@ class RoomProvider extends Component {
 
 
         //filter by breackfast
-        if (breakfast) {
-            tempRooms = tempRooms.filter(room => room.breakfast === true)
+        if (smoking) {
+            tempRooms = tempRooms.filter(room => room.smoking === true)
         }
         //filter by pets
         if (pets) {

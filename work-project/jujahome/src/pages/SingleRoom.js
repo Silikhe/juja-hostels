@@ -37,7 +37,7 @@ export default class SingleRoom extends Component {
             capacity,
             size,
             extras,
-            breakfast,
+            smoking,
             pets,
             images,
             price
@@ -63,7 +63,7 @@ export default class SingleRoom extends Component {
                         </article>
                         <article className="info">
                             <h3>info</h3>
-                            <h6>price : $ {price}</h6>
+                            <h6>price : Ksh. {price}</h6>
                             <h6>size : {size}SQFT</h6>
                             <h6>
                                 max capacity : {
@@ -75,7 +75,7 @@ export default class SingleRoom extends Component {
                             }
                             </h6>
                             <h6>
-                                {breakfast && "free breakfast included"}
+                                {smoking && "free breakfast included"}
                             </h6>
                         </article>
                     </div>
