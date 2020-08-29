@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import Title from './Title'
 import { FaWifi, FaShuttleVan, FaBeer } from 'react-icons/fa'
-import {SiAdguard} from 'react-icons/si'
+// import {GiPadlock} from 'react-icons/go'
+import { GiPadlock } from "react-icons/gi";
 
 
 export default class Services extends Component {
     state = {
         services: [
             {
-                icon: <SiAdguard />,
+                icon: <GiPadlock />,
                 title: "Security 24/7",
                 info: "24 Hours security to safegourd your property, we value your safety."
             },

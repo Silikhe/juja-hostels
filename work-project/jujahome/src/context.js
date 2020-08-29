@@ -35,7 +35,7 @@ class RoomProvider extends Component {
                 order: "-fields.price"
             })
             let rooms = this.formartData(response.items);
-            let featuredRooms = rooms.filter(room => room.featured === true);
+            let featuredRooms = rooms.filter(room => room.features === true);
             let maxPrice = Math.max(...rooms.map(item => item.price))
             let maxSize = Math.max(...rooms.map(item => item.size))
 
