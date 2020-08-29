@@ -17,7 +17,7 @@ export default function RoomFilter({ rooms }) {
         maxPrice,
         minSize,
         maxSize,
-        smoking,
+        breakfast,
         pets
     } = context;
 
@@ -96,12 +96,12 @@ export default function RoomFilter({ rooms }) {
                     <div className="single-extra">
                         <input
                         type="checkbox"
-                            name="smoking"
-                            id="smoking"
-                            checked={smoking}
+                            name="bre"
+                            id="bre"
+                            checked={breakfast}
                             onChange={handleChange}
                         />
-                        <label htmlFor="smoking">smoking</label>
+                        <label htmlFor="bre">bre</label>
                     </div>
                     <div className="single-extra">
                         <input
