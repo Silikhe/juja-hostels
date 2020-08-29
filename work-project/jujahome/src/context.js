@@ -24,7 +24,7 @@ class RoomProvider extends Component {
         maxPrice: 0,
         minSize: 0,
         maxSize: 0,
-        breakfast: false,
+        smoking: false,
         pets: false
     }
 
@@ -146,7 +146,7 @@ class RoomProvider extends Component {
         tempRooms = tempRooms.filter(room => room.size >= minSize && room.size <= maxSize)
 
 
-        //filter by breackfast
+        //filter by smoking
         if (smoking) {
             tempRooms = tempRooms.filter(room => room.smoking === true)
         }
