@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
           <Hero hero="defaultHero">
-                <Burner title="Luxirous Rooms" subtitle="delux rooms starting at $122">
+                <Burner title="Furnished Rooms" subtitle="Luxurious  rooms starting at ksh 5000">
                     <Link to="/rooms" className="btn-primary">
                         our rooms
                 </Link>

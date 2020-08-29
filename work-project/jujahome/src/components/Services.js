@@ -1,30 +1,31 @@
 import React, { Component } from 'react'
 import Title from './Title'
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa'
+import { FaWifi, FaShuttleVan, FaBeer } from 'react-icons/fa'
+import {SiAdguard} from 'react-icons/si'
 
 
 export default class Services extends Component {
     state = {
         services: [
             {
-                icon: <FaCocktail />,
-                title: "Supamarket and shops",
-                info: "Learn React by building a juja project. , Contentful headless CMS for data management, and Netlify to host the application."
+                icon: <SiAdguard />,
+                title: "Security 24/7",
+                info: "24 Hours security to safegourd your property, we value your safety."
             },
             {
-                icon: <FaHiking />,
-                title: "hiking",
-                info: "Learn React by building a juja project. , Contentful headless CMS for data management, and Netlify to host the application."
+                icon: <FaWifi />,
+                title: "Wifi connectivity",
+                info: "Our premises are equiped with inbuild wifi to easen your work and studies"
             },
             {
                 icon: <FaShuttleVan />,
                 title: "Transport and route",
-                info: "Learn React by building a juja project. , Contentful headless CMS for data management, and Netlify to host the application."
+                info: "We have good road and routes that connect to our premises for your confortability"
             },
             {
                 icon: <FaBeer />,
-                title: "drinks and party",
-                info: "Learn React by building a juja project. , Contentful headless CMS for data management, and Netlify to host the application."
+                title: "Parties and Bash",
+                info: "Parties are allowed without any interference. At your own cost"
             }
         ]
     }

@@ -96,12 +96,12 @@ export default function RoomFilter({ rooms }) {
                     <div className="single-extra">
                         <input
                         type="checkbox"
-                            name="bre"
-                            id="bre"
+                            name="breakfast"
+                            id="breakfast"
                             checked={breakfast}
                             onChange={handleChange}
                         />
-                        <label htmlFor="bre">bre</label>
+                        <label htmlFor="breakfast">Smoking</label>
                     </div>
                     <div className="single-extra">
                         <input
